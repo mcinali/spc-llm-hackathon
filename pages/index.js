@@ -39,17 +39,24 @@ export default function Home() {
           </div>
         </header>
 
-        <form onSubmit={onSubmit}>
-          <input
-            type="text"
-            name="animal"
-            placeholder="Enter an animal"
-            value={animalInput}
-            onChange={(e) => setAnimalInput(e.target.value)}
-          />
-          <input type="submit" value="Generate names" />
-        </form>
-        <div className={styles.result}>{result}</div>
+        <div className={styles.panelBody}>
+          <div className={styles.panel}>
+            Insert Script Here
+          </div>
+          <div className={styles.panel}>
+            <form onSubmit={onSubmit}>
+              <input
+                type="text"
+                name="animal"
+                placeholder="Enter an animal"
+                value={animalInput}
+                onChange={(e) => setAnimalInput(e.target.value)}
+              />
+              <input type="submit" value=">" />
+            </form>
+            <div className={styles.result}>{result}</div>
+          </div>
+        </div>
       </main>
     </div>
   );
