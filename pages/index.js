@@ -23,13 +23,22 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
+        <title>SPC LLM Hackathon</title>
+        <link rel="icon" href="/code_logo.png" />
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <header className={styles.header}>
+          <div className={styles.left}>
+            <h3>Home</h3>
+          </div>
+          <div className={styles.right}>
+            <img src="/upload.png" className={styles.icon} />
+            <img src="/notification.png" className={styles.icon} />
+            <img src="/user.png" className={styles.icon} />
+          </div>
+        </header>
+
         <form onSubmit={onSubmit}>
           <input
             type="text"
