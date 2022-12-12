@@ -16,7 +16,7 @@
 
 .main,
 .main input {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #353740;
   font-family: "ColfaxAI", Helvetica, sans-serif;
@@ -37,7 +37,7 @@
 .header .left {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 0px 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -45,13 +45,13 @@
 .header .right {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 0px 10px;
   align-items: center;
 }
 
 .header .icon {
-  width: 34px;
-  height: 34px;
+  width: 25px;
+  height: 25px;
   padding-left: 10px;
 }
 
@@ -76,6 +76,23 @@
   height: 500px;
 }
 
+.main .videoContainer {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.main .video {
+  height: 100%;
+  width: 100%;
+}
+
+.main .video:hover {
+  cursor: pointer;
+}
+
 .main .scrollable {
   overflow-y: auto;
   height: 75%;
@@ -89,11 +106,19 @@
   margin: 20px 0px;
 }
 
+.main h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #202123;
+  width: 100%;
+  margin: 20px 0px;
+}
+
 .main .messagePromptContainer {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 25px;
+  margin: 5px 10px;
+  padding: 5px 10px;
 }
 
 .main .messagePrompt {
@@ -110,7 +135,7 @@
   padding: 9px;
   text-align: center;
   display: inline-block;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 5px;
 }

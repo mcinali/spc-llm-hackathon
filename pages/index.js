@@ -60,26 +60,29 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <header className={styles.header}>
+        <div className={styles.header}>
           <div className={styles.left}>
-            <h3>Recap</h3>
+            <h4>Recap</h4>
           </div>
           <div className={styles.right}>
             <img src="/upload.png" className={styles.icon} />
             <img src="/notification.png" className={styles.icon} />
             <img src="/user.png" className={styles.icon} />
           </div>
-        </header>
-
+        </div>
+        {/* <header className={styles.header}><h5>Project 1</h5></header> */}
         <div className={styles.panelBody}>
           <div className={styles.panel}>
-            <h4>Transcript</h4>
+            <div className={styles.videoContainer}>
+              <img src="/video.png" className={styles.video} />
+            </div>
+            <h5>Transcript</h5>
             <div className={styles.scrollable}>
               {stringToMultiLineHTML(interview1)}
             </div>
           </div>
           <div className={styles.panel}>
-            <h4 style={{ "textAlign": "center" }}>Chat</h4>
+            <h5>Chat</h5>
             <div className={styles.scrollable}>
               <div className={styles.messagePromptContainer}>
                 <div className={styles.messagePrompt}>Ask anything to get insights. Here are some suggested questions to get started:</div>
