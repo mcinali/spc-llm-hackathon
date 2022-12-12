@@ -8,17 +8,17 @@ const openai = new OpenAIApi(configuration);
 
 export default async function (req, res) {
   const completion = await openai.createCompletion({
-    model: "text-davinci-002",
+    model: "text-davinci-003",
     prompt: generatePrompt(req.body.prompt),
     temperature: 0,
-    max_tokens: 256,
+    max_tokens: 80,
   });
   res.status(200).json({ result: completion.data.choices[0].text });
 }
 
 function generatePrompt(prompt) {
   const fullPrompt = `
-    ${interview2}
+    ${interview1}
 
     ${prompt}
   `;
